@@ -1,0 +1,115 @@
+.wrapper {
+    max-width: 68rem;
+    margin: 3rem auto;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-size: cover;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.image, .ment {
+    text-align: center;
+}
+
+.ment h1 {
+    color: rgba(255,255,255, 0.7);
+}
+/* 이미지 감싸기 */
+.image span{
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100%;
+    padding: 0.5rem;
+    background-color: rgba(255,255,255,0.1);
+}
+/* block 처리하니까 원 됨*/
+.image img {
+    border-radius: 100%;
+    width: 10em;
+    display: block;
+    
+}
+
+.ment {
+    font-weight: 200;
+    font-size: 10px;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* 타원형 해결하기..!*/
+.icons .icon_list {
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 100%;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+
+.icons .icon_list:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.icons .icon_list i {
+    color: rgba(255,255,255, 0.6);
+}
+
+/* 사진 정렬 왼쪽-> 오른쪽 */
+.thumbnail {
+    display: flex;
+}
+
+.thumbnail .main__image {
+  
+    margin-right: 1.5rem;
+    flex-grow: 1;
+    margin-top: 3rem;
+
+}
+/* 사진 간격 */
+.thumbnail .main__image a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1.5rem;
+   
+}
+/* 사진 간격 = display: block */
+.thumbnail .main__image a img {
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: block;
+}
+/* 약간의 여백 */
+.thumbnail .main__image a h3 {
+    font-size: 1em;
+    border-bottom: 1px solid rgba(255,255,255, 0.3);
+    border-left: 1px solid rgba(255,255,255, 0.3);
+    border-right: 1px solid rgba(255,255,255, 0.3);
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    color: rgba(255,255,255, 0.7);
+    font-weight: 250;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+
+}
+
+@media (max-width: 768px) {
+    .thumbnail {
+        display: block;
+    }
+}
