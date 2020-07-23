@@ -78,6 +78,16 @@ body {
     margin-top: 3rem;
 
 }
+.thumbnail .main__image a:hover {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.25);
+    /* hover 그림자 */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #FF6382;
+}
+
 /* 사진 간격 */
 .thumbnail .main__image a {
     text-decoration: none;
