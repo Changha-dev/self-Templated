@@ -69,6 +69,7 @@ body {
 /* 사진 정렬 왼쪽-> 오른쪽 */
 .thumbnail {
     display: flex;
+    margin-left: 1rem;
 }
 
 .thumbnail .main__image {
@@ -122,5 +123,26 @@ body {
 @media (max-width: 768px) {
     .thumbnail {
         display: block;
+        margin-left: 1rem;
     }
+}
+footer {
+    margin-top: 2rem;
+    margin-bottom: 10rem;    
+}
+
+footer:before {
+    content: "";
+    border-top: 1px solid rgba(255,255,255, 0.3);
+    display: block;
+    width: 10em;
+    margin: 5rem auto;
+    
+}
+/* 경계선 만들기 */
+
+footer p {
+    text-align: center;
+    color: rgba(255,255,255, 0.75);
+    font-size: 1em; 
 }
